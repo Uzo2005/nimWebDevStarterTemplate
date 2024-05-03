@@ -1,0 +1,6 @@
+{%extends src/layouts/base.nimja%}
+
+{%block content%}
+    hello world, my name is Igwe Cletus and I really dont like what you guys do
+    funny stuff
+{%endblock%}
