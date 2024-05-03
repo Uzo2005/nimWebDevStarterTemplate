@@ -5,8 +5,8 @@ license     = "MIT"
 
 requires "nim >= 2.0.2"
 
-when not(defined(release)): 
-    requires "websocketx>=0.1.2" #so the browser can automatically refresh on update
+# when not(defined(release)): 
+#     requires "websocketx>=0.1.2" #so the browser can automatically refresh on update
 
 task buildCss, "Build The Css File With Tailwind":
     when defined(release):
