@@ -1,9 +1,11 @@
 import macros, os, sequtils, strutils
 import nimja
 
-const templateDir* = readfile(".env").splitLines
-    .mapIt(it.split("=").mapit(it.strip))
-    .filterit(it[0] == "SRC_DIR")[0][1]
+# const templateDir* = readfile(".env").splitLines
+#     .mapIt(it.split("=").mapit(it.strip))
+#     .filterit(it[0] == "SRC_DIR")[0][1]
+
+const templateDir* = "src"
 
 macro declarePageBuilders() =
     result = newStmtList()
